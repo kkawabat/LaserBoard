@@ -1,0 +1,9 @@
+from __future__ import division
+import cv2
+import numpy as np
+
+vid = cv2.VideoCapture(src)
+while 1:
+        ret, view = vid.read()
+        cv2.waitKey(1)
+        cv2.imshow('view', view)
